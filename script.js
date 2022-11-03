@@ -1,10 +1,13 @@
 var navLinks = document.getElementById("navLinks");
 function showMenu() {
-  navLinks.style.right = "0";
+  navLinks.style.width = "480px";
+  navLinks.style.height = "100vh";
 }
+
 function hideMenu() {
-  navLinks.style.right = "-200px";
+  navLinks.style.width = "0";
 }
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -18,6 +21,7 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
+// To silde top article about dog
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
